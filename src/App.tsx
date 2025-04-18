@@ -11,8 +11,7 @@ const App = () => {
   const [priority, setPriority] = useState<'low' | 'normal' | 'high'>('normal');
   const [sortMode, setSortMode] = useState<'created' | 'priority'>('created');
 
-  // Set today's date as default due date
-  const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
 
   useEffect(() => {
     const stored = getTasksFromLocalStorage();
