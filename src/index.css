@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 body {
-    @apply bg-amber-300 text-gray-900;
+    @apply bg-amber-300 lg:bg-white text-gray-900;
   }
